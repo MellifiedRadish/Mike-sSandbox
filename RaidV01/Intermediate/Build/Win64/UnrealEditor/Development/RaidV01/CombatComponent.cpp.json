@@ -1,0 +1,27 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\source\\raidv01\\raidcomponents\\combatcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\raidv01editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\development\\raidv01\\definitions.raidv01.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\source\\raidv01\\raidcomponents\\combatcomponent.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\inc\\raidv01\\combatcomponent.generated.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\source\\raidv01\\weapon\\weapon.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\inc\\raidv01\\weapon.generated.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\source\\raidv01\\character\\raidcharacter.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\inc\\raidv01\\raidcharacter.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\skeletalmeshsocket.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\skeletalmeshsocket.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

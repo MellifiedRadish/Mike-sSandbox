@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\inc\\raidv01\\raidv01gamemodebase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\raidv01editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\development\\raidv01\\definitions.raidv01.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\source\\raidv01\\raidv01gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "c:\\users\\imjgr\\onedrive\\desktop\\gamedev\\unrealgit\\chaoticproject\\raidv01\\intermediate\\build\\win64\\unrealeditor\\inc\\raidv01\\raidv01gamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
