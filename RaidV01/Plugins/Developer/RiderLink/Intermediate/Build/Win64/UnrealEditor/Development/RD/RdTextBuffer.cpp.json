@@ -1,11 +1,19 @@
 {
-    "Version": "1.1",
+    "Version": "1.2",
     "Data": {
+<<<<<<< HEAD
+        "Source": "f:\\fastcoding\\newunrealprojects\\raid\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_gen_cpp\\src\\rdtextbuffer.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "f:\\fastcoding\\newunrealprojects\\raid\\raidv01\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h",
+            "f:\\fastcoding\\newunrealprojects\\raid\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_gen_cpp\\src\\rdtextbuffer.h"
+=======
         "Source": "d:\\raidrepo\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_gen_cpp\\src\\rdtextbuffer.cpp",
         "ProvidedModule": "",
         "Includes": [
             "d:\\raidrepo\\raidv01\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h",
             "d:\\raidrepo\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_gen_cpp\\src\\rdtextbuffer.h"
+>>>>>>> upstream/main
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -1,10 +1,17 @@
 {
-    "Version": "1.1",
+    "Version": "1.2",
     "Data": {
+<<<<<<< HEAD
+        "Source": "f:\\fastcoding\\newunrealprojects\\raid\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\thirdparty.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "f:\\fastcoding\\newunrealprojects\\raid\\raidv01\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h"
+=======
         "Source": "d:\\raidrepo\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\thirdparty.cpp",
         "ProvidedModule": "",
         "Includes": [
             "d:\\raidrepo\\raidv01\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h"
+>>>>>>> upstream/main
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

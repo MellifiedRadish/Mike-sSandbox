@@ -72,3 +72,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Ignoring Riderlink so we don't always have merge conflicts
+Plugins/Developer/RiderLink/*

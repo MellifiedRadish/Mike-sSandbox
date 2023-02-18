@@ -50,6 +50,7 @@ void ARaidCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("LookUp", this, &ARaidCharacter::LookUp);
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &ARaidCharacter::EquipButtonPressed);
+	PlayerInputComponent->BindAction("ShootKey", IE_Pressed, this, &ARaidCharacter::ShootRay);
 }
 
 //void ARaidCharacter::PostInitilizeComponents()
@@ -93,6 +94,29 @@ void ARaidCharacter::EquipButtonPressed()
 	//if (Combat) {
 		//revisit weapon again Combat->EquipWeapon(OverlappingWeapon);
 	//}
+}
+
+void ARaidCharacter::ShootRay()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Boom pow gat"));
+
+	USkeletalMeshComponent* ourMesh = GetMesh();
+	const FVector Start = ourMesh->GetComponentLocation();
+	const FQuat Rotation = ourMesh->GetComponentRotation().Quaternion();
+	const FVector RotationAxis = Rotation.GetAxisY();
+	const FVector End = Start + RotationAxis * 50000;
+
+
+	FHitResult ShootHit;
+	GetWorld()->LineTraceSingleByChannel(ShootHit, Start, End, ECollisionChannel::ECC_Visibility);
+
+	if (ShootHit.bBlockingHit)
+	{
+		DrawDebugLine(GetWorld(), Start, End, FColor::Blue, false, 2.f);
+		DrawDebugSphere(GetWorld(), ShootHit.ImpactPoint, 100.0f, 1, FColor::Red, true, -1.0f);
+		UE_LOG(LogTemp, Warning, TEXT("Hit Something"));
+
+	}
 }
 
 // Called every frame
