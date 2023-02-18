@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp
 /I .
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private
+=======
+D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp
+/I .
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private
+>>>>>>> upstream/main
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -14,6 +20,7 @@ F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Interme
 /I Runtime\ApplicationCore\Public
 /I Runtime\RHI\Public
 /I Runtime\Json\Public
+<<<<<<< HEAD
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol
@@ -33,6 +40,27 @@ F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Interme
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
+=======
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\tl
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\include
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
+>>>>>>> upstream/main
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Slate
 /I Runtime\Slate\Public
 /I Runtime\ImageWrapper\Public
@@ -271,7 +299,11 @@ F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Interme
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule
 /I Runtime\AIModule\Public
 /I Runtime\AIModule\Classes
+<<<<<<< HEAD
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public
+=======
+/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public
+>>>>>>> upstream/main
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -288,6 +320,7 @@ F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Interme
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
 /I "F:\IDEs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+<<<<<<< HEAD
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
@@ -295,6 +328,15 @@ F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Interme
 /FI"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Definitions.h"
 /Fo"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.obj"
 /sourceDependencies F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.json
+=======
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Definitions.h"
+/Fo"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.obj"
+/sourceDependencies D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.json
+>>>>>>> upstream/main
 /Zc:inline
 /nologo
 /Oi

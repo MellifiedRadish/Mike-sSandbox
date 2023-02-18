@@ -9,7 +9,7 @@
 
 
 // Sets default values
-ARaidCharacter::ARaidCharacter()
+ARaidCharacter::ARaidCharacter() : Health(75), MaxHealth(100)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
