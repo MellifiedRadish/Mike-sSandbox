@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.cpp
-=======
-D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.cpp
->>>>>>> upstream/main
 /I .
 /I Runtime
 /I Runtime\TraceLog\Public
@@ -11,15 +7,10 @@ D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShad
 /I Runtime\Json\Public
 /I Runtime\RenderCore\Public
 /I Runtime\RHI\Public
-<<<<<<< HEAD
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source
-=======
-/I D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source
->>>>>>> upstream/main
 /I ThirdParty\mimalloc\include
 /I "F:\IDEs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-<<<<<<< HEAD
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
@@ -27,15 +18,6 @@ D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShad
 /FI"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderShaderInfo\Definitions.h"
 /Fo"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.obj"
 /sourceDependencies F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.json
-=======
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderShaderInfo\Definitions.h"
-/Fo"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.obj"
-/sourceDependencies D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.json
->>>>>>> upstream/main
 /Zc:inline
 /nologo
 /Oi
