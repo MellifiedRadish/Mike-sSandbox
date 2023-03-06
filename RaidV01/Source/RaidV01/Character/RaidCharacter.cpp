@@ -99,10 +99,13 @@ void ARaidCharacter::EquipButtonPressed()
 
 void ARaidCharacter::ShootRay()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Boom pow gat"));
-
 	// *** now we want to fire from the center of the screen and see what it hits. This is the end position of the ray 
 	
+	// find the location of the character's gun
+	USkeletalMeshComponent* ourMesh = GetMesh();
+	const FVector Start = ourMesh->GetComponentLocation() + FVector(0, 0, 120);
+
+
 	// find location of cross hairs
 	FVector2D ViewportSize;
 	if (GEngine && GEngine->GameViewport)
@@ -123,7 +126,7 @@ void ARaidCharacter::ShootRay()
 	{
 		// actually fire our shot from camera 
 		FHitResult ScreenTraceHit;
-		const FVector Start = CrosshairWorldPosition;
+		//const FVector Start = CrosshairWorldPosition;
 		const FVector End = CrosshairWorldPosition + CrosshairWorldDirection * 50'0000;
 
 		FVector ScreenBeamEndPoint = End;
@@ -137,22 +140,6 @@ void ARaidCharacter::ShootRay()
 		}
 	}
 
-	// Now we want to shot from our character in the direction of where this middle beam went, make sure no blockage
-
-	/*
-	USkeletalMeshComponent* ourMesh = GetMesh();
-	const FVector Start = ourMesh->GetComponentLocation();
-	
-	FHitResult ShootHit;
-	GetWorld()->LineTraceSingleByChannel(ShootHit, Start, ScreenBeamEndPoint, ECollisionChannel::ECC_Visibility);
-
-	if (ShootHit.bBlockingHit)
-	{
-		DrawDebugLine(GetWorld(), Start, End, FColor::Blue, false, 2.f);
-		DrawDebugSphere(GetWorld(), ShootHit.ImpactPoint, 100.0f, 1, FColor::Red, true, -1.0f);
-		UE_LOG(LogTemp, Warning, TEXT("Hit Something"));
-	}
-	*/
 }
 
 // Called every frame
