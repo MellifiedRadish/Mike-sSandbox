@@ -6,6 +6,12 @@
 /NAME:"UnrealEditor-RiderGameControl.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\RiderGameControl.cpp.obj"
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\Default.rc2.res"
-/OUT:"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\UnrealEditor-RiderGameControl.lib"
+<<<<<<< HEAD
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\RiderGameControl.cpp.obj"
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\Default.rc2.res"
+/OUT:"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\UnrealEditor-RiderGameControl.lib"
+=======
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\RiderGameControl.cpp.obj"
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\Default.rc2.res"
+/OUT:"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderGameControl\UnrealEditor-RiderGameControl.lib"
+>>>>>>> upstream/main

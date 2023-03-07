@@ -18,10 +18,15 @@
 /ignore:4099
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x64"
+/LIBPATH:"F:\IDEs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x64"
+<<<<<<< HEAD
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64"
+=======
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64"
+>>>>>>> upstream/main
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -33,12 +38,21 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Module.RiderLogging.cpp.obj"
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
+<<<<<<< HEAD
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Module.RiderLogging.cpp.obj"
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
 "..\Intermediate\Build\Win64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\UnrealEditor-RD.lib"
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLink\UnrealEditor-RiderLink.lib"
-"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\UnrealEditor-RiderBlueprint.lib"
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\UnrealEditor-RD.lib"
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLink\UnrealEditor-RiderLink.lib"
+"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\UnrealEditor-RiderBlueprint.lib"
+=======
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Module.RiderLogging.cpp.obj"
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
+"..\Intermediate\Build\Win64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\UnrealEditor-RD.lib"
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLink\UnrealEditor-RiderLink.lib"
+"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\UnrealEditor-RiderBlueprint.lib"
+>>>>>>> upstream/main
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -63,7 +77,13 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Binaries\Win64\UnrealEditor-RiderLogging.dll"
-/IMPLIB:"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\UnrealEditor-RiderLogging.suppressed.lib"
-/PDB:"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Binaries\Win64\UnrealEditor-RiderLogging.pdb"
+<<<<<<< HEAD
+/OUT:"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Binaries\Win64\UnrealEditor-RiderLogging.dll"
+/IMPLIB:"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\UnrealEditor-RiderLogging.suppressed.lib"
+/PDB:"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Binaries\Win64\UnrealEditor-RiderLogging.pdb"
+=======
+/OUT:"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Binaries\Win64\UnrealEditor-RiderLogging.dll"
+/IMPLIB:"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\UnrealEditor-RiderLogging.suppressed.lib"
+/PDB:"D:\RaidRepo\RaidV01\Plugins\Developer\RiderLink\Binaries\Win64\UnrealEditor-RiderLogging.pdb"
+>>>>>>> upstream/main
 /ignore:4078
