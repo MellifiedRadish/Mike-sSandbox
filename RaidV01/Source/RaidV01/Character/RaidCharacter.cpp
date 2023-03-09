@@ -135,20 +135,17 @@ void ARaidCharacter::ShootRay()
 		{
 			ScreenBeamEndPoint = ScreenTraceHit.Location;
 
-			DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 2.f);
-			DrawDebugSphere(GetWorld(), ScreenTraceHit.ImpactPoint, 20.0f, 1, FColor::Blue, true, 2.0f);
-			UE_LOG(LogTemp, Warning, TEXT("Screen hit"));
+			//DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 2.f);
+			//DrawDebugSphere(GetWorld(), ScreenTraceHit.ImpactPoint, 20.0f, 1, FColor::Blue, true, 2.0f);
+			//UE_LOG(LogTemp, Warning, TEXT("Screen hit"));
 
-			// Now make another screen trace from the character to the point this hit
+			// Now make another screen trace from the character to the point this hit (for visual purposes)
 			FHitResult CharacterTraceHit;
 			const FVector CharacterBeamEndPoint = ScreenTraceHit.ImpactPoint;
 			GetWorld()->LineTraceSingleByChannel(CharacterTraceHit, CharacterGunPosition, CharacterBeamEndPoint, ECollisionChannel::ECC_Visibility);
-			if (CharacterTraceHit.bBlockingHit)
-			{
-				DrawDebugLine(GetWorld(), CharacterGunPosition, CharacterBeamEndPoint, FColor::Blue, false, 2.f);
-				DrawDebugSphere(GetWorld(), CharacterTraceHit.ImpactPoint, 30.0f, 1, FColor::Blue, true, 2.0f);
-				UE_LOG(LogTemp, Warning, TEXT("Character hit"));
-			}
+			DrawDebugLine(GetWorld(), CharacterGunPosition, CharacterBeamEndPoint, FColor::Blue, false, 2.f);
+			DrawDebugSphere(GetWorld(), CharacterTraceHit.ImpactPoint, 30.0f, 1, FColor::Blue, true, 2.0f);
+		
 		}
 	}
 
