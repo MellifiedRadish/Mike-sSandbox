@@ -103,8 +103,7 @@ void ARaidCharacter::ShootRay()
 	
 	// find the location of the character's gun
 	USkeletalMeshComponent* ourMesh = GetMesh();
-	const FVector Start = ourMesh->GetComponentLocation() + FVector(0, 0, 120);
-
+	const FVector CharacterGunPosition = ourMesh->GetComponentLocation() + FVector(0, 0, 120);
 
 	// find location of cross hairs
 	FVector2D ViewportSize;
@@ -124,6 +123,7 @@ void ARaidCharacter::ShootRay()
 
 	if (bScreenToWorld) // was deprojection successful?
 	{
+		const FVector Start = CrosshairWorldPosition;
 		// actually fire our shot from camera 
 		FHitResult ScreenTraceHit;
 		//const FVector Start = CrosshairWorldPosition;
@@ -134,9 +134,18 @@ void ARaidCharacter::ShootRay()
 		if (ScreenTraceHit.bBlockingHit)
 		{
 			ScreenBeamEndPoint = ScreenTraceHit.Location;
-			DrawDebugLine(GetWorld(), Start, End, FColor::Blue, false, 2.f);
-			DrawDebugSphere(GetWorld(), ScreenTraceHit.ImpactPoint, 100.0f, 1, FColor::Red, true, -1.0f);
-			UE_LOG(LogTemp, Warning, TEXT("Hit Something"));
+
+			//DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 2.f);
+			//DrawDebugSphere(GetWorld(), ScreenTraceHit.ImpactPoint, 20.0f, 1, FColor::Blue, true, 2.0f);
+			//UE_LOG(LogTemp, Warning, TEXT("Screen hit"));
+
+			// Now make another screen trace from the character to the point this hit (for visual purposes)
+			FHitResult CharacterTraceHit;
+			const FVector CharacterBeamEndPoint = ScreenTraceHit.ImpactPoint;
+			GetWorld()->LineTraceSingleByChannel(CharacterTraceHit, CharacterGunPosition, CharacterBeamEndPoint, ECollisionChannel::ECC_Visibility);
+			DrawDebugLine(GetWorld(), CharacterGunPosition, CharacterBeamEndPoint, FColor::Blue, false, 2.f);
+			DrawDebugSphere(GetWorld(), CharacterTraceHit.ImpactPoint, 30.0f, 1, FColor::Blue, true, 2.0f);
+		
 		}
 	}
 
