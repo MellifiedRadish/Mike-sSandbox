@@ -7,7 +7,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "RaidV01/RaidComponents/CombatComponent.h"
 #include "Kismet/GameplayStatics.h"
-
+#include "EnemyCharacterBase.h"
 
 // Sets default values
 ARaidCharacter::ARaidCharacter() : Health(100), MaxHealth(100)
@@ -186,6 +186,14 @@ void ARaidCharacter::ShootRay()
 		if (ScreenTraceHit.bBlockingHit)
 		{
 			ScreenBeamEndPoint = ScreenTraceHit.Location;
+			
+			AEnemyCharacterBase* enemy = Cast<AEnemyCharacterBase>(ScreenTraceHit.GetActor());
+			if (enemy) 
+			{
+				UE_LOG(LogTemp, Warning, TEXT("hit enemy"));
+				FDamageEvent event = FDamageEvent();
+				enemy->TakeDamage(50, event, GetController(), this);
+			}
 
 			//DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 2.f);
 			//DrawDebugSphere(GetWorld(), ScreenTraceHit.ImpactPoint, 20.0f, 1, FColor::Blue, true, 2.0f);
