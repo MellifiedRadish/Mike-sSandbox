@@ -26,6 +26,7 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EquipButtonPressed();
+	void ShootRay();
 
 private: 
 	UPROPERTY(VisibleAnywhere, Category = Camera)
@@ -37,6 +38,11 @@ private:
 	//UPROPERTY(VisibleAnywhere)
 	//class UCombatComponent* Combat;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
+	int32 Health;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
+	int32 MaxHealth;
 
 public:	
 	
