@@ -27,21 +27,10 @@ public:
 	void BeginPlay() override;
 
 	UFUNCTION()
-	void OnSeePawn(APawn* PlayerPawn);
-
-	UFUNCTION()
 	void SetHasPlayerLOS(bool SeePlayer, class UObject* Player);
-
-	void RunRetriggerableTimer();
 
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UBehaviorTree* BehaviorTree;
-
-	UPROPERTY(EditAnywhere)
-	class UPawnSensingComponent* PawnSensingComponent;
-
-	FTimerHandle RetriggerableTimerHandle;
-	FTimerDelegate FunctionDelegate;	
 };

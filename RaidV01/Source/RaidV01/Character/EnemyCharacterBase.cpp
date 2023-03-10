@@ -3,17 +3,21 @@
 
 #include "EnemyCharacterBase.h"
 
+#include "RaidCharacter.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 #include "RaidV01/RaidV01GameModeBase.h"
+#include "RaidV01/AI/EnemyAIController.h"
 
 // Sets default values
-AEnemyCharacterBase::AEnemyCharacterBase(): Health(100), MaxHealth(100)
+AEnemyCharacterBase::AEnemyCharacterBase(): Health(100), MaxHealth(100), SenseTimeout(2.f), AttackTimeout(1.f), MeleeDamage(10.f)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	PawnSensingComponent = CreateDefaultSubobject<UPawnSensingComponent>(TEXT("PawnSensingComponent"));
 
 	// Don't collide with camera checks to keep 3rd person camera at position when zombies or other players are standing behind us
 	GetMesh()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
@@ -24,11 +28,25 @@ bool AEnemyCharacterBase::IsAlive() const {
 	return Health > 0;
 }
 
+void AEnemyCharacterBase::OnSeePawn(APawn* PlayerPawn) {
+	SensedTarget = true;
+	LastSeenTime = GetWorld()->GetTimeSeconds();
+
+	AEnemyAIController* AIController = Cast<AEnemyAIController>(GetController());
+	ARaidCharacter* Player = Cast<ARaidCharacter>(PlayerPawn);
+
+	if (AIController && Player) {
+		AIController->SetHasPlayerLOS(true, Player);
+	}
+}
+
 // Called when the game starts or when spawned
 void AEnemyCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	// bind our OnSeePawn function to the function of the PawnSensing component
+	PawnSensingComponent->OnSeePawn.AddDynamic(this, &AEnemyCharacterBase::OnSeePawn);
 }
 
 // Called every frame
@@ -36,6 +54,14 @@ void AEnemyCharacterBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (SensedTarget && GetWorld()->TimeSeconds - LastSeenTime > SenseTimeout) {
+		AEnemyAIController* AIController = Cast<AEnemyAIController>(GetController());
+
+		if (AIController) {
+			SensedTarget = false;
+			AIController->SetHasPlayerLOS(false, nullptr);
+		}
+	}
 }
 
 float AEnemyCharacterBase::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator,
@@ -146,8 +172,23 @@ void AEnemyCharacterBase::OnDeath(float KillingDamage, FDamageEvent const& Damag
 	}
 }
 
+void AEnemyCharacterBase::PerformAttack(AActor* HitActor) {
+	if (HitActor) {
+		ARaidCharacter* Player = Cast<ARaidCharacter>(HitActor);
+
+		if (Player && GetWorld()->TimeSeconds - LastAttackTime > AttackTimeout) {
+			LastAttackTime = GetWorld()->GetTimeSeconds();
+			PlayAnimMontage(AnimMontage);
+
+			FPointDamageEvent DamageEvent;
+			DamageEvent.Damage = MeleeDamage;
+			Player->TakeDamage(DamageEvent.Damage, DamageEvent, GetController(), this);
+		}
+	}
+}
+
 void AEnemyCharacterBase::PlaySound(float DamageTaken, FDamageEvent const& DamageEvent, APawn* PawnInstigator,
-	AActor* DamageCauser, bool isKilled) {
+                                    AActor* DamageCauser, bool isKilled) {
 
 	if (isKilled && SoundDeath) {
 		UGameplayStatics::SpawnSoundAttached(SoundDeath, RootComponent, NAME_None, FVector::ZeroVector, EAttachLocation::SnapToTarget, true);

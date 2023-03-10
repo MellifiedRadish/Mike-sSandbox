@@ -10,7 +10,7 @@
 
 
 // Sets default values
-ARaidCharacter::ARaidCharacter() : Health(75), MaxHealth(100)
+ARaidCharacter::ARaidCharacter() : Health(100), MaxHealth(100)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -52,6 +52,58 @@ void ARaidCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &ARaidCharacter::EquipButtonPressed);
 	PlayerInputComponent->BindAction("ShootKey", IE_Pressed, this, &ARaidCharacter::ShootRay);
+}
+
+float ARaidCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator,
+	AActor* DamageCauser) {
+	if (Health <= 0) {
+		return 0.f;
+	}
+
+	// might have different values by gamemode/difficulty?
+	const float ScaledDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+
+	if (ScaledDamage > 0.f) {
+		Health -= ScaledDamage;
+
+		if (Health <= 0) {
+			// might want to check damage types (if we have any)
+
+			SetRagdoll();
+			//Die(ScaledDamage, DamageEvent, EventInstigator, DamageCauser);
+		} else {
+			//APawn* pawn = EventInstigator ? EventInstigator->GetPawn() : nullptr;
+			//PlaySound(ScaledDamage, DamageEvent, pawn, DamageCauser, false);
+		}
+	}
+
+	return ScaledDamage;
+}
+
+void ARaidCharacter::SetRagdoll() {
+	bool inRagdoll = false;
+	USkeletalMeshComponent* Mesh3P = GetMesh();
+
+	if (IsValid(this)) {
+		inRagdoll = false;
+	} else if (!Mesh3P || !Mesh3P->GetPhysicsAsset()) {
+		inRagdoll = false;
+	} else {
+		Mesh3P->SetAllBodiesSimulatePhysics(true);
+		Mesh3P->SetSimulatePhysics(true);
+		Mesh3P->WakeAllRigidBodies();
+		Mesh3P->bBlendPhysics = true;
+
+		inRagdoll = true;
+	}
+
+	UCharacterMovementComponent* CharacterComp = Cast<UCharacterMovementComponent>(GetMovementComponent());
+	if (CharacterComp)
+	{
+		CharacterComp->StopMovementImmediately();
+		CharacterComp->DisableMovement();
+		CharacterComp->SetComponentTickEnabled(false);
+	}
 }
 
 //void ARaidCharacter::PostInitilizeComponents()
