@@ -72,8 +72,7 @@ float AEnemyCharacterBase::TakeDamage(float Damage, FDamageEvent const& DamageEv
 	}
 
 	// might have different values by gamemode/difficulty?
-	//float ScaledDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
-	float ScaledDamage = Damage;
+	const float ScaledDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
 
 	if (ScaledDamage > 0.f) {
 		Health -= ScaledDamage;

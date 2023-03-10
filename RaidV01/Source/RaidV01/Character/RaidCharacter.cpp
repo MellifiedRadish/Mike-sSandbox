@@ -191,8 +191,11 @@ void ARaidCharacter::ShootRay()
 			if (enemy) 
 			{
 				UE_LOG(LogTemp, Warning, TEXT("hit enemy"));
-				FDamageEvent event = FDamageEvent();
-				enemy->TakeDamage(50, event, GetController(), this);
+
+				float DamageAmount = 50.f;
+				FPointDamageEvent DamageEvent;
+				DamageEvent.Damage = DamageAmount;
+				enemy->TakeDamage(DamageAmount, DamageEvent, GetController(), this);
 			}
 
 			//DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 2.f);
