@@ -4,6 +4,7 @@
 #include "RaidAnimInstance.h"
 #include "RaidCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 
 void URaidAnimInstance::NativeInitializeAnimation()
 {
@@ -30,4 +31,12 @@ void URaidAnimInstance::NativeUpdateAnimation(float DeltaTime)
 	bIsInAir = RaidCharacter->GetCharacterMovement()->IsFalling();
 
 	bIsAccelerating = RaidCharacter->GetCharacterMovement()->GetCurrentAcceleration().Size() > 0.f ? true : false; //Ternary Expression if greater than 0 its true else set to false.
+	bAiming = RaidCharacter->IsAiming();
+
+	FRotator AimRotation = RaidCharacter->GetBaseAimRotation();
+	FRotator MovementRotation = UKismetMathLibrary::MakeRotFromX(RaidCharacter->GetVelocity());
+	FRotator DeltaRot = UKismetMathLibrary::NormalizedDeltaRotator(MovementRotation, AimRotation);
+	DeltaRotation = FMath::RInterpTo(DeltaRotation, DeltaRot, DeltaTime, 6.f);
+	YawOffset = DeltaRotation.Yaw;
+	//YawOffset = UKismetMathLibrary::NormalizedDeltaRotator(MovementRotation, AimRotation).Yaw;
 }
