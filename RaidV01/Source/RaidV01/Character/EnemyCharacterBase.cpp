@@ -46,14 +46,17 @@ float AEnemyCharacterBase::TakeDamage(float Damage, FDamageEvent const& DamageEv
 	}
 
 	// might have different values by gamemode/difficulty?
-	const float ScaledDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+	//float ScaledDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+	float ScaledDamage = Damage;
 
 	if (ScaledDamage > 0.f) {
 		Health -= ScaledDamage;
+		UE_LOG(LogTemp, Warning, TEXT("The health value is: %d"), Health);
+
 
 		if (Health <= 0) {
 			// might want to check damage types (if we have any)
-
+			this->Destroy();
 			Die(ScaledDamage, DamageEvent, EventInstigator, DamageCauser);
 		} else {
 			APawn* pawn = EventInstigator ? EventInstigator->GetPawn() : nullptr;
