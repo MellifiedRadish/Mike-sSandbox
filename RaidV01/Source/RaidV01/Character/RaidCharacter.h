@@ -16,6 +16,8 @@ public:
 	ARaidCharacter();
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+	virtual void SetRagdoll();
 	bool IsAiming();
 	//virtual void PostInitilizeComponents() override;
 
