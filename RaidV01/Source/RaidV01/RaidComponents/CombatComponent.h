@@ -24,6 +24,7 @@ protected:
 
 private:
 	class ARaidCharacter* Character;
+	//bool bAiming;
 	AWeapon* EquippedWeapon;
 
 public:	
