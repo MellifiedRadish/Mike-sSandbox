@@ -25,7 +25,8 @@ ARaidCharacter::ARaidCharacter() : Health(100), MaxHealth(100)
 	FollowCamera->bUsePawnControlRotation = false;
 
 	bUseControllerRotationYaw = false;
-	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->bOrientRotationToMovement = false;//was true
+	bUseControllerRotationYaw = true;
 
 	//Combat = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComponent"));
 	//Combat->SetIsReplicated(true);
@@ -52,6 +53,13 @@ void ARaidCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &ARaidCharacter::EquipButtonPressed);
 	PlayerInputComponent->BindAction("ShootKey", IE_Pressed, this, &ARaidCharacter::ShootRay);
+	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &ARaidCharacter::AimButtonPressed);
+	PlayerInputComponent->BindAction("Aim", IE_Released, this, &ARaidCharacter::AimButtonReleased);
+}
+
+bool ARaidCharacter::IsAiming()
+{
+	return bAiming;
 }
 
 float ARaidCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator,
@@ -212,6 +220,16 @@ void ARaidCharacter::ShootRay()
 		}
 	}
 
+}
+
+void ARaidCharacter::AimButtonPressed()
+{
+	bAiming = true;
+}
+
+void ARaidCharacter::AimButtonReleased()
+{
+	bAiming = false;
 }
 
 // Called every frame

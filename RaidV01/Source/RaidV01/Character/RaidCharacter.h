@@ -18,6 +18,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void SetRagdoll();
+	bool IsAiming();
 	//virtual void PostInitilizeComponents() override;
 
 protected:
@@ -29,6 +30,8 @@ protected:
 	void LookUp(float Value);
 	void EquipButtonPressed();
 	void ShootRay();
+	void AimButtonPressed();
+	void AimButtonReleased();
 
 private: 
 	UPROPERTY(VisibleAnywhere, Category = Camera)
@@ -45,6 +48,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
 	int32 MaxHealth;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
+	bool bAiming;
 
 public:	
 	
