@@ -24,6 +24,8 @@ AWeapon::AWeapon()
 
 	PickupWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("PickupWidget"));
 	PickupWidget->SetupAttachment(RootComponent);
+
+	TimeLastFired = 0.0;
 }
 
 void AWeapon::BeginPlay()
@@ -47,6 +49,46 @@ void AWeapon::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 	if (RaidCharacter && PickupWidget) {
 		PickupWidget->SetVisibility(true);
 	}
+}
+
+EWeaponFiringMode AWeapon::GetFiringMode() const
+{
+	return FiringMode;
+}
+
+int AWeapon::GetRoundsPerMinute() const
+{
+	return RoundsPerMinute;
+}
+
+int AWeapon::GetRoundsPerBurst() const
+{
+	return  RoundsPerBurst;
+}
+
+float AWeapon::GetTimeLastFired() const
+{
+	return TimeLastFired;
+}
+
+void AWeapon::SetTimeLastFired(float Time)
+{
+	TimeLastFired = Time;
+}
+
+bool AWeapon::ReadyToFire() const
+{
+	return GetWorld()->TimeSeconds - TimeLastFired > 60.0 / RoundsPerMinute;
+}
+
+bool AWeapon::ReadyToStartBurst() const
+{
+	return  GetWorld()->TimeSeconds - TimeLastBursted > SecondsBetweenBursts;
+}
+
+void AWeapon::SetTimeLastBursted(float Time)
+{
+	TimeLastBursted = Time;
 }
 
 void AWeapon::Tick(float DeltaTime)

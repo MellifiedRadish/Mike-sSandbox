@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "RaidV01/Weapon/Weapon.h"
 #include "RaidCharacter.generated.h"
 
 UCLASS()
@@ -15,9 +16,12 @@ class RAIDV01_API ARaidCharacter : public ACharacter
 public:
 	ARaidCharacter();
 	virtual void Tick(float DeltaTime) override;
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void SetRagdoll();
+	UFUNCTION(BlueprintCallable, Category = "Weapon")
+	void EquipWeapon(AWeapon* Weapon);
+	AWeapon* GetWeapon() const;
 	bool IsAiming();
 	//virtual void PostInitilizeComponents() override;
 
@@ -29,6 +33,12 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EquipButtonPressed();
+	void OnFireDown();
+	void OnFireUp();
+	void StartBurst();
+	void ExecuteBurst();
+	void EndBurst();
+	void RequestFire();
 	void ShootRay();
 	void AimButtonPressed();
 	void AimButtonReleased();
@@ -51,6 +61,18 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
 	bool bAiming;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon")
+	bool bFireIsDown;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon")
+	bool bWasFiringLastFrame;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon")
+	AWeapon* EquippedWeapon;
+
+	bool bIsBursting;
+	int RoundsFiredThisBurst;
 
 public:	
 	
