@@ -10,7 +10,8 @@
 #include "EnemyCharacterBase.h"
 
 // Sets default values
-ARaidCharacter::ARaidCharacter() : Health(100), MaxHealth(100)
+// TODO: Might be safer to have some "None" weapon instead of directly using nullptr?
+ARaidCharacter::ARaidCharacter() : Health(100), MaxHealth(100), EquippedWeapon(nullptr)
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -52,7 +53,8 @@ void ARaidCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("LookUp", this, &ARaidCharacter::LookUp);
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &ARaidCharacter::EquipButtonPressed);
-	PlayerInputComponent->BindAction("ShootKey", IE_Pressed, this, &ARaidCharacter::ShootRay);
+	PlayerInputComponent->BindAction("ShootKey", IE_Pressed, this, &ARaidCharacter::OnFireDown);
+	PlayerInputComponent->BindAction("ShootKey", IE_Released, this, &ARaidCharacter::OnFireUp);
 	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &ARaidCharacter::AimButtonPressed);
 	PlayerInputComponent->BindAction("Aim", IE_Released, this, &ARaidCharacter::AimButtonReleased);
 }
@@ -157,11 +159,83 @@ void ARaidCharacter::EquipButtonPressed()
 	//}
 }
 
+void ARaidCharacter::OnFireDown()
+{
+	bFireIsDown = true;
+}
+
+void ARaidCharacter::OnFireUp()
+{
+	bFireIsDown = false;
+}
+
+void ARaidCharacter::StartBurst()
+{
+	bIsBursting = true;
+	RoundsFiredThisBurst = 0;
+	if (GetWeapon()) GetWeapon()->SetTimeLastBursted(GetWorld()->TimeSeconds);
+}
+
+// Runs every frame while the gun is firing its burst.
+void ARaidCharacter::ExecuteBurst()
+{
+	if (!GetWeapon() || !GetWeapon()->ReadyToFire()) return;
+	ShootRay();
+	if (GetWeapon())
+	{
+		GetWeapon()->SetTimeLastFired(GetWorld()->TimeSeconds);
+		RoundsFiredThisBurst++;
+		if (RoundsFiredThisBurst >= GetWeapon()->GetRoundsPerBurst()) EndBurst();
+	} else
+	{
+		EndBurst();
+	}
+}
+
+void ARaidCharacter::EndBurst()
+{
+	bIsBursting = false;
+}
+
+void ARaidCharacter::EquipWeapon(AWeapon* Weapon)
+{
+	EquippedWeapon = Weapon;
+}
+
+AWeapon* ARaidCharacter::GetWeapon() const
+{
+	return EquippedWeapon;
+}
+
+void ARaidCharacter::RequestFire()
+{
+	if (!GetWeapon()) return;
+	switch (GetWeapon()->GetFiringMode()) {
+		case EWeaponFiringMode::Semi:
+			// Do not fire if the fire button was held last frame, or if the gun's RPM is too slow.
+			if (bWasFiringLastFrame || !GetWeapon()->ReadyToFire()) return;
+			ShootRay();
+			if (GetWeapon()) GetWeapon()->SetTimeLastFired(GetWorld()->TimeSeconds);
+			break;
+		case EWeaponFiringMode::Auto:
+			if (!GetWeapon()->ReadyToFire()) return;
+			ShootRay();
+			if (GetWeapon()) GetWeapon()->SetTimeLastFired(GetWorld()->TimeSeconds);
+			break;
+		case EWeaponFiringMode::Burst:
+			if (bWasFiringLastFrame || !GetWeapon()->ReadyToFire() || !GetWeapon()->ReadyToStartBurst() || bIsBursting) return;
+			StartBurst();
+			break;
+		default: ;
+	}
+
+}
+
 void ARaidCharacter::ShootRay()
 {
-	// *** now we want to fire from the center of the screen and see what it hits. This is the end position of the ray 
-	
+	// *** now we want to fire from the center of the screen and see what it hits. This is the end position of the ray
 	// find the location of the character's gun
+	// TODO(ben): replace this with a GetWeapon().GetBarrel() call
 	USkeletalMeshComponent* ourMesh = GetMesh();
 	const FVector CharacterGunPosition = ourMesh->GetComponentLocation() + FVector(0, 0, 120);
 
@@ -216,7 +290,7 @@ void ARaidCharacter::ShootRay()
 			GetWorld()->LineTraceSingleByChannel(CharacterTraceHit, CharacterGunPosition, CharacterBeamEndPoint, ECollisionChannel::ECC_Visibility);
 			DrawDebugLine(GetWorld(), CharacterGunPosition, CharacterBeamEndPoint, FColor::Blue, false, 2.f);
 			DrawDebugSphere(GetWorld(), CharacterTraceHit.ImpactPoint, 30.0f, 1, FColor::Blue, true, 2.0f);
-		
+			
 		}
 	}
 
@@ -236,7 +310,11 @@ void ARaidCharacter::AimButtonReleased()
 void ARaidCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
+	if (bFireIsDown) RequestFire();
+	if (bIsBursting) ExecuteBurst();
+	
+	bWasFiringLastFrame = bFireIsDown;
 }
 
 
