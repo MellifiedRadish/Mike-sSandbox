@@ -5,6 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "RaidV01/Weapon/Weapon.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
+#include "NiagaraComponent.h"
 #include "RaidCharacter.generated.h"
 
 UCLASS()
@@ -49,6 +52,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	class UCameraComponent* FollowCamera;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Asset References", meta = (AllowPrivateAccess = "true"))
+	UNiagaraSystem* HitParticles;
 
 	//UPROPERTY(VisibleAnywhere)
 	//class UCombatComponent* Combat;
