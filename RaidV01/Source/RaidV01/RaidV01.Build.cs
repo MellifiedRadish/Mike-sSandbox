@@ -1,5 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
+using System.IO;
 using UnrealBuildTool;
 
 public class RaidV01 : ModuleRules
@@ -8,7 +8,8 @@ public class RaidV01 : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GameplayTasks", "AIModule", "NavigationSystem"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GameplayTasks", "AIModule", "NavigationSystem", "Niagara"});
+		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Niagara"));
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
