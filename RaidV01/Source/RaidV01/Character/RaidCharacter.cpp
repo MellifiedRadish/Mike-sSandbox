@@ -268,6 +268,8 @@ void ARaidCharacter::ShootRay()
 		if (ScreenTraceHit.bBlockingHit)
 		{
 			ScreenBeamEndPoint = ScreenTraceHit.Location;
+
+			UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), HitParticles, ScreenTraceHit.ImpactPoint);
 			
 			AEnemyCharacterBase* enemy = Cast<AEnemyCharacterBase>(ScreenTraceHit.GetActor());
 			if (enemy) 
@@ -288,13 +290,8 @@ void ARaidCharacter::ShootRay()
 			FHitResult CharacterTraceHit;
 			const FVector CharacterBeamEndPoint = ScreenTraceHit.ImpactPoint;
 			GetWorld()->LineTraceSingleByChannel(CharacterTraceHit, CharacterGunPosition, CharacterBeamEndPoint, ECollisionChannel::ECC_Visibility);
-			DrawDebugLine(GetWorld(), CharacterGunPosition, CharacterBeamEndPoint, FColor::Blue, false, 2.f);
-			DrawDebugSphere(GetWorld(), CharacterTraceHit.ImpactPoint, 30.0f, 1, FColor::Blue, true, 2.0f);
-			
-			if (HitParticles)
-			{
-				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), HitParticles, CharacterTraceHit.ImpactPoint);
-			}
+			//DrawDebugLine(GetWorld(), CharacterGunPosition, CharacterBeamEndPoint, FColor::Blue, false, 2.f);
+			//DrawDebugSphere(GetWorld(), CharacterTraceHit.ImpactPoint, 30.0f, 1, FColor::Red, true, 2.0f);
 		}
 	}
 
