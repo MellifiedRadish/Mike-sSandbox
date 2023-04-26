@@ -56,6 +56,15 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Asset References", meta = (AllowPrivateAccess = "true"))
 	UNiagaraSystem* HitParticles;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Asset References", meta = (AllowPrivateAccess = "true"))
+	USoundBase* ShootSounds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Asset References", meta = (AllowPrivateAccess = "true"))
+	USoundBase* ShootSkeletonSounds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Asset References", meta = (AllowPrivateAccess = "true"))
+	USoundBase* ShootHurtSounds;
+
 	//UPROPERTY(VisibleAnywhere)
 	//class UCombatComponent* Combat;
 
