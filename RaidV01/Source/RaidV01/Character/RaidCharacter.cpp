@@ -8,6 +8,7 @@
 #include "RaidV01/RaidComponents/CombatComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "EnemyCharacterBase.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 // Sets default values
 // TODO: Might be safer to have some "None" weapon instead of directly using nullptr?
@@ -57,6 +58,7 @@ void ARaidCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("ShootKey", IE_Released, this, &ARaidCharacter::OnFireUp);
 	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &ARaidCharacter::AimButtonPressed);
 	PlayerInputComponent->BindAction("Aim", IE_Released, this, &ARaidCharacter::AimButtonReleased);
+	PlayerInputComponent->BindAction("EndGame", IE_Released, this, &ARaidCharacter::EndGamePressed);
 }
 
 bool ARaidCharacter::IsAiming()
@@ -67,7 +69,7 @@ bool ARaidCharacter::IsAiming()
 float ARaidCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator,
 	AActor* DamageCauser) {
 	if (Health <= 0) {
-		return 0.f;
+		//ignore for now return 0.f;
 	}
 
 	// might have different values by gamemode/difficulty?
@@ -158,6 +160,11 @@ void ARaidCharacter::EquipButtonPressed()
 	//if (Combat) {
 		//revisit weapon again Combat->EquipWeapon(OverlappingWeapon);
 	//}
+}
+
+void ARaidCharacter::EndGamePressed()
+{
+	FGenericPlatformMisc::RequestExit(true);
 }
 
 void ARaidCharacter::OnFireDown()
