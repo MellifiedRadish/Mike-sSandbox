@@ -40,5 +40,11 @@
 				"Win64"
 			]
 		}
+	],
+	"TargetPlatforms": [
+		"IOS",
+		"Linux",
+		"LinuxArm64",
+		"Windows"
 	]
 }
