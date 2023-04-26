@@ -20,6 +20,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "PlayerCondition")
 	bool IsAlive() const;
 
+	UFUNCTION()
+	void OnSeePawn(APawn* PlayerPawn);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -36,26 +39,50 @@ public:
 
 	virtual void OnDeath(float KillingDamage, FDamageEvent const& DamageEvent, APawn* PawnInstigator, AActor* DamageCauser);
 
+	UFUNCTION(BlueprintCallable, Category = "Attacking")
+	virtual void PerformAttack(AActor* HitActor);
+
 	virtual void PlaySound(float DamageTaken, struct FDamageEvent const& DamageEvent, APawn* PawnInstigator, AActor* DamageCauser, bool isKilled);
 
 	virtual void SetRagdoll();
 
 private:
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
-	int32 Health;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = General, meta = (AllowPrivateAccess = "true"))
-	int32 MaxHealth;
-
 	bool IsDying;
 
+	bool SensedTarget;
+
+	float LastSeenTime;
+
+	float LastAttackTime;
+
 public:
+
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	int32 Health;
+
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	int32 MaxHealth;
+
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	float SenseTimeout;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Attacking")
+	float AttackTimeout;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Attacking")
+	float MeleeDamage;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Attacking")
+	UAnimMontage* AnimMontage;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Sound")
 	USoundCue* SoundHurt;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Sound")
 	USoundCue* SoundDeath;
+
+	UPROPERTY(EditAnywhere)
+	class UPawnSensingComponent* PawnSensingComponent;
 
 };
