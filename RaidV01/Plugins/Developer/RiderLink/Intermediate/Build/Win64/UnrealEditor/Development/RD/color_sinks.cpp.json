@@ -146,6 +146,9 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\assert.h",
 =======
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\assert.h",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\os.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\registry.h",
@@ -159,6 +162,7 @@
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\formatter.h",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\array",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\windows_include.h",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\um\\windows.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\shared\\winapifamily.h",
@@ -269,6 +273,8 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\um\\imm.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\um\\ime_cmodes.h",
 =======
+=======
+>>>>>>> Stashed changes
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\um\\windows.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\shared\\winapifamily.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\shared\\winpackagefamily.h",
@@ -377,6 +383,9 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\um\\mcx.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\um\\imm.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\um\\ime_cmodes.h",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\pattern_formatter.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\sinks\\stdout_color_sinks-inl.h",

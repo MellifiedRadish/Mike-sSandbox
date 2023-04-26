@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\RD.cpp
 /I .
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source
@@ -18,6 +19,8 @@ F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
 =======
+=======
+>>>>>>> Stashed changes
 C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\RD.cpp
 /I .
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source
@@ -36,11 +39,15 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I ThirdParty\mimalloc\include
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 /I "F:\IDEs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
@@ -52,6 +59,8 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /Fo"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\RD.cpp.obj"
 /sourceDependencies F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\RD.cpp.json
 =======
+=======
+>>>>>>> Stashed changes
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
@@ -61,6 +70,9 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /FI"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Definitions.h"
 /Fo"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\RD.cpp.obj"
 /sourceDependencies C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\RD.cpp.json
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /Zc:inline
 /nologo

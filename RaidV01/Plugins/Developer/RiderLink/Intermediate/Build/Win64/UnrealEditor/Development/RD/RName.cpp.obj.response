@@ -32,6 +32,9 @@ C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLin
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /FI"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Definitions.h"
 /Fo"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\RName.cpp.obj"

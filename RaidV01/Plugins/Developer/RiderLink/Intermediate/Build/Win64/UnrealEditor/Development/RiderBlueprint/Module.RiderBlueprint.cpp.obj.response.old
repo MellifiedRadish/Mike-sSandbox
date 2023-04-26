@@ -1,14 +1,25 @@
 <<<<<<< Updated upstream
 <<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
+<<<<<<< Updated upstream
+<<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
 F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp
 /I .
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private
 ========
 C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Source\RaidV01\RaidComponents\CombatComponent.cpp
 /I .
+========
+C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Source\RaidV01\RaidComponents\CombatComponents.cpp
+/I .
+>>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponents.cpp.obj.response
 /I C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Source\RaidV01\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 >>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponent.cpp.obj.response.lc
+=======
+C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp
+/I .
+/I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private
+>>>>>>> Stashed changes
 =======
 C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp
 /I .
@@ -27,6 +38,7 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I Runtime\ApplicationCore\Public
 /I Runtime\RHI\Public
 /I Runtime\Json\Public
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library
@@ -48,6 +60,8 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
 =======
+=======
+>>>>>>> Stashed changes
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol
@@ -67,6 +81,9 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Slate
 /I Runtime\Slate\Public
@@ -307,6 +324,7 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I Runtime\AIModule\Public
 /I Runtime\AIModule\Classes
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
 /I F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public
 ========
@@ -317,7 +335,13 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\UnrealEditor\Inc\RaidV01
 /I C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Source
 /I C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Source\RaidV01\Public
+<<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
 >>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponent.cpp.obj.response.lc
+=======
+/I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public
+>>>>>>> Stashed changes
+========
+>>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponents.cpp.obj.response
 =======
 /I C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public
 >>>>>>> Stashed changes
@@ -336,6 +360,7 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I ThirdParty\PhysX3\PhysX_3.4\Include\extensions
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /I "F:\IDEs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 <<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
@@ -351,18 +376,36 @@ C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 >>>>>>> Stashed changes
+=======
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+>>>>>>> Stashed changes
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
 <<<<<<< Updated upstream
+<<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
+<<<<<<< Updated upstream
+========
+>>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponents.cpp.obj.response
 /FI"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\RaidV01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /FI"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\UnrealEditor\Development\RaidV01\Definitions.RaidV01.h"
 /Yu"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\RaidV01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\RaidV01Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+<<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.obj.response.old
 /Fo"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\UnrealEditor\Development\RaidV01\CombatComponent.cpp.lc.obj"
 /sourceDependencies"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\UnrealEditor\Development\RaidV01\CombatComponent.cpp.lc.json"
 >>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponent.cpp.obj.response.lc
+=======
+/FI"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Definitions.h"
+/Fo"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.obj"
+/sourceDependencies C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.json
+>>>>>>> Stashed changes
+========
+/Fo"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\UnrealEditor\Development\RaidV01\CombatComponents.cpp.obj"
+/sourceDependencies C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Intermediate\Build\Win64\UnrealEditor\Development\RaidV01\CombatComponents.cpp.json
+>>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/CombatComponents.cpp.obj.response
 =======
 /FI"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Definitions.h"
 /Fo"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderBlueprint\Module.RiderBlueprint.cpp.obj"

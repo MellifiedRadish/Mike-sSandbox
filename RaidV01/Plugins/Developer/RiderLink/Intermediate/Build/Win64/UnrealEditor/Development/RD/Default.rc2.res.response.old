@@ -3,6 +3,7 @@
 /l 0x409
 /I "."
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /I "F:\IDEs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 <<<<<<<< Updated upstream:RaidV01/Plugins/Developer/RiderLink/Intermediate/Build/Win64/UnrealEditor/Development/RD/Default.rc2.res.response.old
@@ -15,12 +16,19 @@
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 >>>>>>> Stashed changes
+=======
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+>>>>>>> Stashed changes
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>>> Stashed changes:RaidV01/Intermediate/Build/Win64/UnrealEditor/Development/RaidV01/Default.rc2.res.response.old
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 /DIS_PROGRAM=0
@@ -79,7 +87,11 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=RaidV01
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /fo "F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Default.rc2.res"
+=======
+/fo "C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Default.rc2.res"
+>>>>>>> Stashed changes
 =======
 /fo "C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Default.rc2.res"
 >>>>>>> Stashed changes

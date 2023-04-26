@@ -7,9 +7,12 @@
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\simplesocket.h",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\sys\\stat.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\corecrt.h",
 =======
+=======
+>>>>>>> Stashed changes
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\sys\\stat.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\corecrt.h",
 >>>>>>> Stashed changes
@@ -254,6 +257,9 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\um\\ws2tcpip.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\shared\\ws2ipdef.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\shared\\in6addr.h",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\host.h",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\cstdint",
@@ -262,9 +268,12 @@
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\stdint.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\stattimer.h",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\time.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\corecrt_wtime.h"
 =======
+=======
+>>>>>>> Stashed changes
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\time.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\corecrt_wtime.h"
 >>>>>>> Stashed changes
