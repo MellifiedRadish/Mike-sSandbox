@@ -22,10 +22,17 @@ C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLin
 /I ThirdParty\mimalloc\include
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+<<<<<<< Updated upstream
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
+=======
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
+>>>>>>> Stashed changes
 /FI"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Definitions.h"
 /Fo"C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\SynchronousScheduler.cpp.obj"
 /sourceDependencies C:\Users\myhas\Documents\GitHub\Mike-sSandbox\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\SynchronousScheduler.cpp.json

@@ -93,7 +93,11 @@
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\xnode_handle.h",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\string",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\cctype",
+<<<<<<< Updated upstream
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\ctype.h",
+=======
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\ctype.h",
+>>>>>>> Stashed changes
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_core_cpp\\src\\main\\lifetime\\lifetimeimpl.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_core_cpp\\src\\main\\std\\hash.h",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\map",
@@ -145,7 +149,11 @@
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\xlocinfo",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\xlocinfo.h",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\clocale",
+<<<<<<< Updated upstream
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\locale.h",
+=======
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\locale.h",
+>>>>>>> Stashed changes
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_core_cpp\\rd_core_export.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\src\\rd_core_cpp\\src\\main\\lifetime\\lifetime.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\spdlog.h",
@@ -179,7 +187,11 @@
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\log_msg_buffer.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\circular_q.h",
             "c:\\program files (x86)\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.29.30133\\include\\cassert",
+<<<<<<< Updated upstream
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\assert.h",
+=======
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\assert.h",
+>>>>>>> Stashed changes
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\os.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\version.h",
             "c:\\users\\myhas\\documents\\github\\mike-ssandbox\\raidv01\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\spdlog\\include\\spdlog\\details\\synchronous_factory.h"

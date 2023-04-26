@@ -6,6 +6,12 @@
 /NAME:"UnrealEditor-RiderLogging.dll"
 /IGNORE:4221
 /NODEFAULTLIB
+<<<<<<< Updated upstream
 "F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Module.RiderLogging.cpp.obj"
 "F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
 /OUT:"F:\FastCoding\NewUnrealProjects\Raid\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\UnrealEditor-RiderLogging.lib"
+=======
+"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Module.RiderLogging.cpp.obj"
+"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
+/OUT:"C:\Users\imjgr\OneDrive\Desktop\GameDev\UnrealGit\chaoticProject\RaidV01\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\UnrealEditor-RiderLogging.lib"
+>>>>>>> Stashed changes
