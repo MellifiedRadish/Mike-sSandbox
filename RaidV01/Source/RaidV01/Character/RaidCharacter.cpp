@@ -72,13 +72,14 @@ float ARaidCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, 
 
 	// might have different values by gamemode/difficulty?
 	const float ScaledDamage = Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+	UGameplayStatics::PlaySound2D(GetWorld(), ShootHurtSounds);
 
 	if (ScaledDamage > 0.f) {
 		Health -= ScaledDamage;
 
 		if (Health <= 0) {
 			// might want to check damage types (if we have any)
-
+			UE_LOG(LogTemp, Warning, TEXT("Commited Dead"));
 			SetRagdoll();
 			//Die(ScaledDamage, DamageEvent, EventInstigator, DamageCauser);
 		} else {
@@ -270,6 +271,7 @@ void ARaidCharacter::ShootRay()
 			ScreenBeamEndPoint = ScreenTraceHit.Location;
 
 			UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), HitParticles, ScreenTraceHit.ImpactPoint);
+			UGameplayStatics::PlaySound2D(GetWorld(), ShootSounds);
 			
 			AEnemyCharacterBase* enemy = Cast<AEnemyCharacterBase>(ScreenTraceHit.GetActor());
 			if (enemy) 
@@ -280,6 +282,8 @@ void ARaidCharacter::ShootRay()
 				FPointDamageEvent DamageEvent;
 				DamageEvent.Damage = DamageAmount;
 				enemy->TakeDamage(DamageAmount, DamageEvent, GetController(), this);
+				UGameplayStatics::PlaySound2D(GetWorld(), ShootSkeletonSounds);
+
 			}
 
 			//DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 2.f);
