@@ -36,6 +36,7 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EquipButtonPressed();
+	void EndGamePressed();
 	void OnFireDown();
 	void OnFireUp();
 	void StartBurst();
